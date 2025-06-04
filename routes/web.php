@@ -19,7 +19,9 @@ Route::middleware('auth')->group(function () {
 
     //Customer.....................
     Route::get('/customer', [CustomerController::class, 'index'])->name('dashboard.customer.index');
-    Route::get('/customer/add', [CustomerController::class, 'add'])->name('dashboard.customer.add_customer');
+    Route::get('/customer/add', [CustomerController::class, 'add'])->name('add.customer');
+    Route::post('/customer/add', [CustomerController::class, 'add_customer'])->name('add_customer_post');
+    Route::post('/customer/delete/{id}', [CustomerController::class, 'delete_customer'])->name('delete.customer');
 });
 
 require __DIR__.'/auth.php';
