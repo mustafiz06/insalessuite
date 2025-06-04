@@ -10,12 +10,12 @@
 
 
     <!-- ========== All CSS files linkup ========= -->
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/lineicons.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/fullcalendar.css" />
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/fullcalendar.css" />
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/main.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/lineicons.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/fullcalendar.css" />
+    <link rel="stylesheet" href="assets/css/fullcalendar.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -31,7 +31,7 @@
     <aside class="sidebar-nav-wrapper">
         <div class="navbar-logo">
             <a href="index.html">
-                <img src="{{ asset('assets') }}/images/logo/logo.svg" alt="logo" />
+                <img src="assets/images/logo/logo.svg" alt="logo" />
             </a>
         </div>
         <nav class="sidebar-nav">
@@ -438,11 +438,13 @@
         </header>
         <!-- ========== header end ========== -->
 
-        <!-- ========== Content section start ========== -->
+        <!-- ========== section start ========== -->
 
+        <main class="py-4">
             @yield('content')
-
-        <!-- ========== Content section end ========== -->
+        </main>
+            @yield('content')
+        <!-- ========== section end ========== -->
 
         <!-- ========== footer start =========== -->
         <footer class="footer">
@@ -475,15 +477,15 @@
     <!-- ======== main-wrapper end =========== -->
 
     <!-- ========= All Javascript files linkup ======== -->
-    <script src="{{ asset('assets') }}/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ asset('assets') }}/js/Chart.min.js"></script>
-    <script src="{{ asset('assets') }}/js/dynamic-pie-chart.js"></script>
-    <script src="{{ asset('assets') }}/js/moment.min.js"></script>
-    <script src="{{ asset('assets') }}/js/fullcalendar.js"></script>
-    <script src="{{ asset('assets') }}/js/jvectormap.min.js"></script>
-    <script src="{{ asset('assets') }}/js/world-merc.js"></script>
-    <script src="{{ asset('assets') }}/js/polyfill.js"></script>
-    <script src="{{ asset('assets') }}/js/main.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/Chart.min.js"></script>
+    <script src="assets/js/dynamic-pie-chart.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/fullcalendar.js"></script>
+    <script src="assets/js/jvectormap.min.js"></script>
+    <script src="assets/js/world-merc.js"></script>
+    <script src="assets/js/polyfill.js"></script>
+    <script src="assets/js/main.js"></script>
 
     <script>
         // ======== jvectormap activation
